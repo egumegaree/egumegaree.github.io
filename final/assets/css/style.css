@@ -1,0 +1,295 @@
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    font-family: "Raleway", serif;
+    font-size: 24px;
+    height: 60px;
+    color: #3D3A45;
+}
+
+.nav-item .star {
+    width: 40px;
+}
+
+.nav-item {
+    margin-right: 50px;
+    padding-top: 5px;
+}
+
+hr {
+    margin: 0;
+    margin-top: 5px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* HOME STYLE*/
+
+#home {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home-description {
+    position: absolute;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 4%;
+}
+
+#home .star {
+    width: 45px;
+}
+
+#star1 {
+    position: relative;
+    top: -75px;
+    left: 25px;
+}
+
+#star2 {
+    position: relative;
+    bottom: -35px;
+    right: 35px;
+}
+
+#title {
+    font-family: "Henny Penny", serif;
+    font-size: 128px;
+    background: -webkit-linear-gradient(top, #2C6F7D, #b488bd);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #EBC6C6;
+}
+
+#witch {
+    height: 95%;
+}
+
+#description {
+    width: 60%;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.description-text {
+    text-align: right;
+    font-family: "Raleway", serif;
+    font-size: 30px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+#craft-button {
+    width: 250px;
+    text-align: center;
+    vertical-align: middle;
+    height: 75px;
+    line-height: 70px;
+    margin-top: 45px;
+    background: #b397b8;
+    border-radius: 20px;
+    border: 2px #EBC6C6;
+    font-family: "Milonga", serif;
+    font-size: 40px;
+    color: #FFF9F9;
+}
+
+/* QUIZ STYLE*/
+
+.quiz {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 110px;
+    display: none;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+#q1 {
+    display: block;
+}
+
+.question {
+    font-family: "Milonga", serif;
+    font-size: 45px;
+    color: #262228;
+    -webkit-text-stroke: 0.5px #E4CBEB;
+    margin: 0 100px 30px 100px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+
+.answer-button {
+    text-align: center;
+    vertical-align: middle;
+    width: 500px; /*30%*/
+    height: 75px;
+    line-height: 70px;
+    font-family: "Raleway", serif;
+    font-size: 22px;
+    background: #ffffff;
+    border-radius: 25px;
+    margin: 20px;
+    margin-left: 100px; /*10%*/
+    margin-right: 100px; /*10%*/
+    box-shadow: 0px 0px 7px 3px #A9D1D3;
+}
+
+.answer-button:hover {
+    cursor: pointer;
+}
+
+.center {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-left: 5%;
+}
+
+#crafting {
+    width: 65%;
+}
+
+#complete {
+    width: 65%;
+    display: none;
+}
+
+#quiz-complete {
+    font-family: "Milonga", serif;
+    font-size: 96px;
+    color: #262228;
+    margin-top: 12%;
+    text-align: center;
+    display: none;
+}
+
+#quiz-complete .star {
+    width: 45px;
+}
+
+#star3 {
+    position: relative;
+    top: -75px;
+    left: 22px;
+}
+
+#star4 {
+    position: relative;
+    bottom: -35px;
+    right: 35px;
+}
+
+.result-description {
+    display: none;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#result-box {
+    width: 40%;
+    background: -webkit-linear-gradient(top, #F6E4E4, #ECE5F4);
+    padding: 40px;
+    padding-top: 30px;
+    border-radius: 50px;
+    position: fixed;
+    right: 3%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.potion {
+    width: 50%;
+    margin: 20px;
+    margin-top: 8%;
+    position: fixed;
+    display: none;
+}
+
+.potion-name {
+    font-family: "Milonga", serif;
+    font-size: 50px;
+    background: -webkit-linear-gradient(top, #9977A9, #D69D90);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.potion-description {
+    font-family: "Raleway", serif;
+    font-size: 21px;
+    color: #3D3A45;
+}
+
+.potion-flair {
+    font-family: "Raleway", serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #3D3A45;
+}
+
+/* #reset-container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+} */
+
+#reset-button {
+    background: #ebb8b8;
+    width: 400px;
+    text-align: center;
+    vertical-align: middle;
+    height: 75px;
+    line-height: 70px;
+    margin-top: 45px;
+    border-radius: 20px;
+    font-family: "Milonga", serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 4px 2px #fff9f9;
+    display: none;
+}
+
+#reset-container .star {
+    width: 20px;
+}
+
+p {
+    font-size: 40px;
+    font-family: "Raleway", serif;
+    text-align: center;
+}
